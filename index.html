@@ -1,0 +1,676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Прейскурант цін на стоматологічні послуги</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body
+    oncontextmenu="return false"
+    ondragstart="return false"
+    onselect="return false"
+    onselectstart="return false"
+    onbeforecopy="return false"
+    oncopy="return false"
+  >
+    <div id="list">
+      <div class="title">
+        <div class="code">Код</div>
+        <div class="name">Найменування послуг</div>
+        <div class="price">Ціна</div>
+      </div>
+      <div style="clear: both; padding: 5px 0"></div>
+
+      <div class="eq" id="add150" onclick="addPrice('150');">
+        <div class="code">150</div>
+        <div class="name">Огляд хворого</div>
+        <div class="price">39.0</div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="eq" id="add151" onclick="addPrice('151');">
+        <div class="code">151</div>
+        <div class="name">Консультація лікаря</div>
+        <div class="price">120.0</div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="eq" id="add153" onclick="addPrice('153');">
+        <div class="code">153</div>
+        <div class="name">Видалення пломби</div>
+        <div class="price">52.0</div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="eq" id="add155" onclick="addPrice('155');">
+        <div class="code">155</div>
+        <div class="name">Застосування коффердама</div>
+        <div class="price">120.0</div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="eq" id="add156" onclick="addPrice('156');">
+        <div class="code">156</div>
+        <div class="name">Декоративна косметична накладка на зуб</div>
+        <div class="price">348.0</div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="eq" id="add250" onclick="addPrice('250');">
+        <div class="code">250</div>
+        <div class="name">Виклик лікаря додому</div>
+        <div class="price">359.0</div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="eq" id="add279" onclick="addPrice('279');">
+        <div class="code">279</div>
+        <div class="name">Полірування реставраціі</div>
+        <div class="price">70.0</div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="eq" id="add301" onclick="addPrice('301');">
+        <div class="code">301</div>
+        <div class="name">Рентгенограма (1 знімок)</div>
+        <div class="price">50.0</div>
+        <div style="clear: both"></div>
+      </div>
+
+      <div class="section" name="one">Лікування карієсу</div>
+
+      <div id="one" class="hide">
+        <div class="eq" id="add158" onclick="addPrice('158');">
+          <div class="code">158</div>
+          <div class="name">
+            Препар., форм. і мед./обр. порожнини при карієсі
+          </div>
+          <div class="price">70.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add160" onclick="addPrice('160');">
+          <div class="code">160</div>
+          <div class="name">Ретракция ясенного краю</div>
+          <div class="price">52.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add161" onclick="addPrice('161');">
+          <div class="code">161</div>
+          <div class="name">Ізолююча прокладка "Адгезор"</div>
+          <div class="price">36.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add162" onclick="addPrice('162');">
+          <div class="code">162</div>
+          <div class="name">Ізолююча фото-полімерна прокладка</div>
+          <div class="price">51.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add164" onclick="addPrice('164');">
+          <div class="code">164</div>
+          <div class="name">Пломба з цементу</div>
+          <div class="price">71.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add165" onclick="addPrice('165');">
+          <div class="code">165</div>
+          <div class="name">Пломба з цементу "Кетак Моляр"</div>
+          <div class="price">94.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add166" onclick="addPrice('166');">
+          <div class="code">166</div>
+          <div class="name">Пломба хімічного затвердіння (паста-паста)</div>
+          <div class="price">157.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add169" onclick="addPrice('169');">
+          <div class="code">169</div>
+          <div class="name">Пломба з фото матеріалу 1 пов. "Filtek"</div>
+          <div class="price">218.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add174" onclick="addPrice('174');">
+          <div class="code">174</div>
+          <div class="name">Пломба з фото матеріалу 2 пов. "Filtek"</div>
+          <div class="price">314.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add178" onclick="addPrice('178');">
+          <div class="code">178</div>
+          <div class="name">Пломба з фото матеріалу 3 пов. "Filtek"</div>
+          <div class="price">437.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add171" onclick="addPrice('171');">
+          <div class="code">171</div>
+          <div class="name">Пломба з фото матеріалу 1 пов. "Charisma"</div>
+          <div class="price">195.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add175" onclick="addPrice('175');">
+          <div class="code">175</div>
+          <div class="name">Пломба з фото матеріалу 2 пов. "Charisma"</div>
+          <div class="price">268.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add180" onclick="addPrice('180');">
+          <div class="code">180</div>
+          <div class="name">Пломба з фото матеріалу 3 пов. "Charisma"</div>
+          <div class="price">393.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add184" onclick="addPrice('184');">
+          <div class="code">184</div>
+          <div class="name">Відновлення кукси зуба під коронку "Charisma"</div>
+          <div class="price">507.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add185" onclick="addPrice('185');">
+          <div class="code">185</div>
+          <div class="name">Реставрація зуба</div>
+          <div class="price">510.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add181" onclick="addPrice('181');">
+          <div class="code">181</div>
+          <div class="name">Корекція реставрації дефекту пломби</div>
+          <div class="price">124.0</div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+
+      <div class="section" name="two">Лікування пульпіту і періодонтиту</div>
+
+      <div id="two" class="hide">
+        <div class="eq" id="add186" onclick="addPrice('186');">
+          <div class="code">186</div>
+          <div class="name">Розкриття і формування порожнини зуба</div>
+          <div class="price">104.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add187" onclick="addPrice('187');">
+          <div class="code">187</div>
+          <div class="name">Накладення девіталізуючої пасти</div>
+          <div class="price">41.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="info"><b>Одноканальний зуб</b></div>
+        <div class="eq" id="add189" onclick="addPrice('189');">
+          <div class="code">189</div>
+          <div class="name">Викорінення пульпи з каналу зуба</div>
+          <div class="price">93.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add190" onclick="addPrice('190');">
+          <div class="code">190</div>
+          <div class="name">Хімічне розширення каналу</div>
+          <div class="price">53.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add191" onclick="addPrice('191');">
+          <div class="code">191</div>
+          <div class="name">Мех./обр. каналу ручними інструментами</div>
+          <div class="price">142.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add192" onclick="addPrice('192');">
+          <div class="code">192</div>
+          <div class="name">Мех./обр. каналу машинними інструментами</div>
+          <div class="price">125.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add302" onclick="addPrice('302');">
+          <div class="code">302</div>
+          <div class="name">Створення відтоку через корневий канал</div>
+          <div class="price">103.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add193" onclick="addPrice('193');">
+          <div class="code">193</div>
+          <div class="name">Медикаментозна обробка каналу</div>
+          <div class="price">70.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add195" onclick="addPrice('195');">
+          <div class="code">195</div>
+          <div class="name">Пломбування к/к "Форедент"</div>
+          <div class="price">94.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add182" onclick="addPrice('182');">
+          <div class="code">182</div>
+          <div class="name">
+            Пломбування к/к сіллером за допомогою гутаперчевого штифта
+          </div>
+          <div class="price">94.0</div>
+          <div style="clear: both"></div>
+        </div>
+
+        <div class="eq" id="add275" onclick="addPrice('275');">
+          <div class="code">275</div>
+          <div class="name">Пломбування к/к молочного зуба пастою ЦОЕ</div>
+          <div class="price">87.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add276" onclick="addPrice('276');">
+          <div class="code">276</div>
+          <div class="name">
+            Пломбування каналу при несформованою верхівці кореня
+          </div>
+          <div class="price">77.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add277" onclick="addPrice('277');">
+          <div class="code">277</div>
+          <div class="name">Лікування молочного зуба ампутаційним методом</div>
+          <div class="price">93.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add278" onclick="addPrice('278');">
+          <div class="code">278</div>
+          <div class="name">
+            Лікувальна прокладка при ампутаційном методі лікування
+          </div>
+          <div class="price">78.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add196" onclick="addPrice('196');">
+          <div class="code">196</div>
+          <div class="name">Тимчасове пломбування каналу</div>
+          <div class="price">70.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <!--
+		<div class="eq" id="add300" onclick="addPrice('300');">
+			<div class="code">300</div>
+			<div class="name">Лікування гострої форми стоматиту</div>
+			<div class="price">0.0</div><div style="clear:both;"></div>
+		</div>
+-->
+        <div class="eq" id="add206" onclick="addPrice('206');">
+          <div class="code">206</div>
+          <div class="name">
+            Розпломбування 1 к/к (фосфат цементом, стеклоіномером)
+          </div>
+          <div class="price">156.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add207" onclick="addPrice('207');">
+          <div class="code">207</div>
+          <div class="name">
+            Розпломбування 1 к/к (форедентом, сіллером і гуттапер. штифтом)
+          </div>
+          <div class="price">139.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add208" onclick="addPrice('208');">
+          <div class="code">208</div>
+          <div class="name">Видалення стороннього тіла з 1 к/к</div>
+          <div class="price">278.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add209" onclick="addPrice('209');">
+          <div class="code">209</div>
+          <div class="name">Закриття перфорації дна пульпової камери</div>
+          <div class="price">204.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add210" onclick="addPrice('210');">
+          <div class="code">210</div>
+          <div class="name">Фіксація 1 титанового штифта</div>
+          <div class="price">113.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add211" onclick="addPrice('211');">
+          <div class="code">211</div>
+          <div class="name">Фіксація 1 стекловолоконного штифта</div>
+          <div class="price">172.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add212" onclick="addPrice('212');">
+          <div class="code">212</div>
+          <div class="name">Тимчасова пломба</div>
+          <div class="price">55.0</div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+
+      <div class="section" name="three">
+        Лікування пародонтиту (пародонтозу)
+      </div>
+
+      <div id="three" class="hide">
+        <!--
+		<div class="eq" id="add213" onclick="addPrice('213');">
+			<div class="code">213</div>
+			<div class="name">Фізіопроцедури: електрофорез (1 сеанс)</div>
+			<div class="price">0.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add272" onclick="addPrice('272');">
+			<div class="code">272</div>
+			<div class="name">Фізіопроцедури: дарсонваль (1 сеанс)</div>
+			<div class="price">0.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add273" onclick="addPrice('273');">
+			<div class="code">273</div>
+			<div class="name">Фізіопроцедури: УВЧ (1 сеанс)</div>
+			<div class="price">0.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add274" onclick="addPrice('274');">
+			<div class="code">274</div>
+			<div class="name">Фізіопроцедури: тубус кварц (1 сеанс)</div>
+			<div class="price">0.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add214" onclick="addPrice('214');">
+			<div class="code">214</div>
+			<div class="name">Фізіопроцедури: вакуумний масаж (1 сеанс)</div>
+			<div class="price">0.0</div><div style="clear:both;"></div>
+		</div>
+-->
+
+        <div class="eq" id="add215" onclick="addPrice('215');">
+          <div class="code">215</div>
+          <div class="name">Професійна гігієна зубів</div>
+          <div class="price">209.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add267" onclick="addPrice('267');">
+          <div class="code">267</div>
+          <div class="name">Гігієнічна чистка зубів AIR-FLOW (6 зубів)</div>
+          <div class="price">209.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add216" onclick="addPrice('216');">
+          <div class="code">216</div>
+          <div class="name">
+            Зняття зубних відкладень ультразвуковим апаратом (6 зубів)
+          </div>
+          <div class="price">243.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add217" onclick="addPrice('217');">
+          <div class="code">217</div>
+          <div class="name">Зняття зубних ручним способом (6 зубів)</div>
+          <div class="price">308.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add218" onclick="addPrice('218');">
+          <div class="code">218</div>
+          <div class="name">
+            Лікування чутливості зубів фторсожержащім лаком (1 зуб)
+          </div>
+          <div class="price">88.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add219" onclick="addPrice('219');">
+          <div class="code">219</div>
+          <div class="name">Лікування чутливості зубів герметиком (1 зуб)</div>
+          <div class="price">149.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <!--
+		<div class="eq" id="add227" onclick="addPrice('227');">
+			<div class="code">227</div>
+			<div class="name">Лікування чутливості зубів герметірующім ліквідом (1 зуб)</div>
+			<div class="price">0.0</div><div style="clear:both;"></div>
+		</div>
+-->
+        <div class="eq" id="add220" onclick="addPrice('220');">
+          <div class="code">220</div>
+          <div class="name">
+            Шинування зубів: скловолокно і композитний матеріал (1 од)
+          </div>
+          <div class="price">318.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add221" onclick="addPrice('221');">
+          <div class="code">221</div>
+          <div class="name">Визначення проб та індексів</div>
+          <div class="price">87.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add222" onclick="addPrice('222');">
+          <div class="code">222</div>
+          <div class="name">Навчання і контроль гігієни порожнини рота</div>
+          <div class="price">122.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add223" onclick="addPrice('223');">
+          <div class="code">223</div>
+          <div class="name">
+            Взяття вмісту пародонтальних кишень для мікробіологічного
+            дослідження (без лабораторного дослідження)
+          </div>
+          <div class="price">87.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add224" onclick="addPrice('224');">
+          <div class="code">224</div>
+          <div class="name">
+            Усунення травматичної оклюзії методом виборчого прішліфовиванія (в
+            області 6 зубів)
+          </div>
+          <div class="price">104.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add225" onclick="addPrice('225');">
+          <div class="code">225</div>
+          <div class="name">
+            Усунення місцевих дратівливих факторів (країв пломб, коронок і т.д.)
+            - 1 од
+          </div>
+          <div class="price">87.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add226" onclick="addPrice('226');">
+          <div class="code">226</div>
+          <div class="name">
+            Кюретаж пародонтального кишені (в області 2х зубів)
+          </div>
+          <div class="price">259.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add228" onclick="addPrice('228');">
+          <div class="code">228</div>
+          <div class="name">
+            Медикаментозне лікування пародонтальних кишень, слизової оболонки
+            порожнини рота
+          </div>
+          <div class="price">96.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add229" onclick="addPrice('229');">
+          <div class="code">229</div>
+          <div class="name">
+            Пародонтальна пов'язка в області до 6-ти зубів (м'яка лікувальна)
+          </div>
+          <div class="price">52.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add230" onclick="addPrice('230');">
+          <div class="code">230</div>
+          <div class="name">
+            Пародонтальна пов'язка в області до 6-ти зубів (фіксуюча)
+          </div>
+          <div class="price">80.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add231" onclick="addPrice('231');">
+          <div class="code">231</div>
+          <div class="name">Дренування пародонтального абцесу</div>
+          <div class="price">71.0</div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="eq" id="add232" onclick="addPrice('232');">
+          <div class="code">232</div>
+          <div class="name">Гемостатична губка</div>
+          <div class="price">53.0</div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+
+      <!--
+	<div class="section" name="four">Хирургические услуги</div>
+	
+	<DIV id="four" class="hide">
+		<div class="eq" id="add233" onclick="addPrice('233');">
+			<div class="code">233</div>
+			<div class="name">Анестезия аппликационная</div>
+			<div class="price">53.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add234" onclick="addPrice('234');">
+			<div class="code">234</div>
+			<div class="name">Анестезия инфильтрационная "Лидокаин"</div>
+			<div class="price">53.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add235" onclick="addPrice('235');">
+			<div class="code">235</div>
+			<div class="name">Анестезия проводниковая "Лидокаин"</div>
+			<div class="price">69.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add236" onclick="addPrice('236');">
+			<div class="code">236</div>
+			<div class="name">Анестезия инфильтрационная с помощью карпулы</div>
+			<div class="price">64.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add237" onclick="addPrice('237');">
+			<div class="code">237</div>
+			<div class="name">Анестезия проводниковая с помощью карпулы</div>
+			<div class="price">80.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add239" onclick="addPrice('239');">
+			<div class="code">239</div>
+			<div class="name">Удаление зуба (простое)</div>
+			<div class="price">154.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add240" onclick="addPrice('240');">
+			<div class="code">240</div>
+			<div class="name">Удаление зуба (средней сложности)</div>
+			<div class="price">223.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add242" onclick="addPrice('242');">
+			<div class="code">242</div>
+			<div class="name">Удаление осколка зуба/корня (отлом короки)</div>
+			<div class="price">159.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add243" onclick="addPrice('243');">
+			<div class="code">243</div>
+			<div class="name">Удаление зуба (сложное)</div>
+			<div class="price">452.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add244" onclick="addPrice('244');">
+			<div class="code">244</div>
+			<div class="name">Удаление зуба (атипическое)</div>
+			<div class="price">932.0</div><div style="clear:both;"></div>
+		</div>
+		
+		<div class="eq" id="add245" onclick="addPrice('245');">
+			<div class="code">245</div>
+			<div class="name">Удаление капюшона</div>
+			<div class="price">250.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add246" onclick="addPrice('246');">
+			<div class="code">246</div>
+			<div class="name">Лоскутная операция</div>
+			<div class="price">760.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add247" onclick="addPrice('247');">
+			<div class="code">247</div>
+			<div class="name">Удаление эпулиса</div>
+			<div class="price">694.0</div><div style="clear:both;"></div>
+		</div>	
+		<div class="eq" id="add248" onclick="addPrice('248');">
+			<div class="code">248</div>
+			<div class="name">Удаление экзостоза альвеолярного отростка</div>
+			<div class="price">446.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add268" onclick="addPrice('268');">
+			<div class="code">268</div>
+			<div class="name">Удаление ретенированного зуба</div>
+			<div class="price">869.70</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add249" onclick="addPrice('249');">
+			<div class="code">249</div>
+			<div class="name">Пластика уздечки</div>
+			<div class="price">381.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add251" onclick="addPrice('251');">
+			<div class="code">251</div>
+			<div class="name">Кюретаж лунки при альвеолите</div>
+			<div class="price">168.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add252" onclick="addPrice('252');">
+			<div class="code">252</div>
+			<div class="name">Резекция верхушки корня</div>
+			<div class="price">761.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add254" onclick="addPrice('254');">
+			<div class="code">254</div>
+			<div class="name">Пластика соустья гайморовой пазухи</div>
+			<div class="price">621.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add256" onclick="addPrice('256');">
+			<div class="code">256</div>
+			<div class="name">Удаление папилломы</div>
+			<div class="price">305.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add258" onclick="addPrice('258');">
+			<div class="code">258</div>
+			<div class="name">Хирургическое обнажение коронки ретенированного зуба</div>
+			<div class="price">137.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add259" onclick="addPrice('259');">
+			<div class="code">259</div>
+			<div class="name">Вскрытие абсцесса</div>
+			<div class="price">215.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add260" onclick="addPrice('260');">
+			<div class="code">260</div>
+			<div class="name">Наложение швов (1 ед)</div>
+			<div class="price">104.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add261" onclick="addPrice('261');">
+			<div class="code">261</div>
+			<div class="name">Вправление вывиха нижней челюсти</div>
+			<div class="price">227.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add269" onclick="addPrice('269');">
+			<div class="code">269</div>
+			<div class="name">Гингивотомия в области 1 зуба</div>
+			<div class="price">175.0</div><div style="clear:both;"></div>
+		</div>
+		<div class="eq" id="add262" onclick="addPrice('262');">
+			<div class="code">262</div>
+			<div class="name">Снятие швов (1 ед))</div>
+			<div class="price">43.0</div><div style="clear:both;"></div>
+		</div>
+	</DIV>
+-->
+
+      <div style="clear: both"></div>
+    </div>
+
+    <div id="order">
+      <div id="close">x</div>
+
+      <div class="title">
+        <div class="code">Код</div>
+        <div class="name">Найменування послуг</div>
+        <div class="price">Ціна</div>
+      </div>
+      <div style="clear: both; padding: 5px 0"></div>
+      <div id="services"></div>
+      <div class="total">
+        Разом:
+        <span class="ye">грн.</span>
+        <div id="total">0.0</div>
+      </div>
+    </div>
+  </body>
+</html>
